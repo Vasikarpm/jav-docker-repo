@@ -36,7 +36,7 @@ RUN ./mvnw package
 FROM alpine:latest
 ENV JAVA_HOME=/jre
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
-RUN apk --no-cache add ca-certificates
+# RUN apk --no-cache add ca-certificates
 
 # Add app user.
 ARG USER_NAME="appuser"
