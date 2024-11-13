@@ -48,8 +48,8 @@ ARG GROUP_ID="1000"
 
 # Configure work directory.
 ARG APP_DIR=/app
-RUN mkdir $APP_DIR && \
-    chown -R $USER_NAME:$GROUP_NAME $APP_DIR
+# RUN mkdir $APP_DIR && \
+#     chown -R $USER_NAME:$GROUP_NAME $APP_DIR
 WORKDIR $APP_DIR
 
 # Copy downsized JRE from builder image.
