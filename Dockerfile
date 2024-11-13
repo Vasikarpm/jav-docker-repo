@@ -43,8 +43,8 @@ ARG USER_NAME="appuser"
 ARG USER_ID="1000"
 ARG GROUP_NAME="apps"
 ARG GROUP_ID="1000"
-RUN addgroup --gid $GROUP_ID $GROUP_NAME && \
-    adduser --no-create-home --disabled-password --ingroup $GROUP_NAME --uid $USER_ID $USER_NAME
+# RUN addgroup --gid $GROUP_ID $GROUP_NAME && \
+#     adduser --no-create-home --disabled-password --ingroup $GROUP_NAME --uid $USER_ID $USER_NAME
 
 # Configure work directory.
 ARG APP_DIR=/app
